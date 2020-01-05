@@ -110,12 +110,12 @@ def _main():
             _sys.exit(int(ret))
         from mmdnn.conversion._script.dump_code import dump_code
         dump_code(args.dstFramework, network_filename + '.py', temp_filename + '.npy', args.outputModel, args.dump_tag)
-        remove_temp_files(temp_filename)
+        #remove_temp_files(temp_filename)
 
     else:
         model_args, unknown_args = _extract_model_args(args, unknown_args, temp_filename)
         ret = IRToModel._convert(model_args)
-        remove_temp_files(temp_filename)
+        #remove_temp_files(temp_filename)
         _sys.exit(int(ret))
 
 

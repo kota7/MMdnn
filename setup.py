@@ -88,12 +88,12 @@ setup(
     # pip to create the appropriate form of executable for the target platform.
     entry_points={
         'console_scripts': [
-            'mmconvert  = mmdnn.conversion._script.convert:_main',
-            'mmdownload = mmdnn.conversion._script.extractModel:_main',
-            'mmvismeta  = mmdnn.conversion.examples.tensorflow.vis_meta:_main',
-            'mmtoir     = mmdnn.conversion._script.convertToIR:_main',
-            'mmtocode   = mmdnn.conversion._script.IRToCode:_main',
-            'mmtomodel  = mmdnn.conversion._script.dump_code:_main',
+            'mmconvert2  = mmdnn.conversion._script.convert:_main',
+            'mmdownload2 = mmdnn.conversion._script.extractModel:_main',
+            'mmvismeta2  = mmdnn.conversion.examples.tensorflow.vis_meta:_main',
+            'mmtoir2     = mmdnn.conversion._script.convertToIR:_main',
+            'mmtocode2   = mmdnn.conversion._script.IRToCode:_main',
+            'mmtomodel2  = mmdnn.conversion._script.dump_code:_main',
         ],
     },
 )
